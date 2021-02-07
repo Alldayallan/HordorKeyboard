@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD54C6A825CF6EEC00D97E88 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD54C6A725CF6EEC00D97E88 /* KeyboardViewController.swift */; };
+		FD54C6AC25CF6EEC00D97E88 /* Hordor.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD54C6A525CF6EEC00D97E88 /* Hordor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD54C6B425CF735D00D97E88 /* hodor.png in Resources */ = {isa = PBXBuildFile; fileRef = FD54C6B325CF735D00D97E88 /* hodor.png */; };
 		FD99761525CF243F00DB904A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD99761425CF243F00DB904A /* AppDelegate.swift */; };
 		FD99761725CF243F00DB904A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD99761625CF243F00DB904A /* SceneDelegate.swift */; };
 		FD99761925CF243F00DB904A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD99761825CF243F00DB904A /* ViewController.swift */; };
@@ -15,7 +18,35 @@
 		FD99762125CF244000DB904A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD99761F25CF244000DB904A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FD54C6AA25CF6EEC00D97E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD99760925CF243F00DB904A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD54C6A425CF6EEC00D97E88;
+			remoteInfo = Hordor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD54C6AD25CF6EEC00D97E88 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD54C6AC25CF6EEC00D97E88 /* Hordor.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FD54C6A525CF6EEC00D97E88 /* Hordor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Hordor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD54C6A725CF6EEC00D97E88 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		FD54C6A925CF6EEC00D97E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD54C6B325CF735D00D97E88 /* hodor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hodor.png; sourceTree = "<group>"; };
 		FD99761125CF243F00DB904A /* HordorKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HordorKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD99761425CF243F00DB904A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD99761625CF243F00DB904A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FD54C6A225CF6EEC00D97E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD99760E25CF243F00DB904A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +75,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD54C6A625CF6EEC00D97E88 /* Hordor */ = {
+			isa = PBXGroup;
+			children = (
+				FD54C6B325CF735D00D97E88 /* hodor.png */,
+				FD54C6A725CF6EEC00D97E88 /* KeyboardViewController.swift */,
+				FD54C6A925CF6EEC00D97E88 /* Info.plist */,
+			);
+			path = Hordor;
+			sourceTree = "<group>";
+		};
 		FD99760825CF243F00DB904A = {
 			isa = PBXGroup;
 			children = (
 				FD99761325CF243F00DB904A /* HordorKeyboard */,
+				FD54C6A625CF6EEC00D97E88 /* Hordor */,
 				FD99761225CF243F00DB904A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				FD99761125CF243F00DB904A /* HordorKeyboard.app */,
+				FD54C6A525CF6EEC00D97E88 /* Hordor.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +120,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FD54C6A425CF6EEC00D97E88 /* Hordor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD54C6B025CF6EEC00D97E88 /* Build configuration list for PBXNativeTarget "Hordor" */;
+			buildPhases = (
+				FD54C6A125CF6EEC00D97E88 /* Sources */,
+				FD54C6A225CF6EEC00D97E88 /* Frameworks */,
+				FD54C6A325CF6EEC00D97E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hordor;
+			productName = Hordor;
+			productReference = FD54C6A525CF6EEC00D97E88 /* Hordor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FD99761025CF243F00DB904A /* HordorKeyboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD99762525CF244000DB904A /* Build configuration list for PBXNativeTarget "HordorKeyboard" */;
@@ -77,10 +144,12 @@
 				FD99760D25CF243F00DB904A /* Sources */,
 				FD99760E25CF243F00DB904A /* Frameworks */,
 				FD99760F25CF243F00DB904A /* Resources */,
+				FD54C6AD25CF6EEC00D97E88 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD54C6AB25CF6EEC00D97E88 /* PBXTargetDependency */,
 			);
 			name = HordorKeyboard;
 			productName = HordorKeyboard;
@@ -93,9 +162,12 @@
 		FD99760925CF243F00DB904A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					FD54C6A425CF6EEC00D97E88 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					FD99761025CF243F00DB904A = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -115,11 +187,20 @@
 			projectRoot = "";
 			targets = (
 				FD99761025CF243F00DB904A /* HordorKeyboard */,
+				FD54C6A425CF6EEC00D97E88 /* Hordor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FD54C6A325CF6EEC00D97E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD54C6B425CF735D00D97E88 /* hodor.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD99760F25CF243F00DB904A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +214,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FD54C6A125CF6EEC00D97E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD54C6A825CF6EEC00D97E88 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD99760D25CF243F00DB904A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +233,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD54C6AB25CF6EEC00D97E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD54C6A425CF6EEC00D97E88 /* Hordor */;
+			targetProxy = FD54C6AA25CF6EEC00D97E88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FD99761A25CF243F00DB904A /* Main.storyboard */ = {
@@ -165,6 +262,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FD54C6AE25CF6EEC00D97E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZY22C8744;
+				INFOPLIST_FILE = Hordor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.allanman.HordorKeyboard.Hordor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD54C6AF25CF6EEC00D97E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZY22C8744;
+				INFOPLIST_FILE = Hordor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.allanman.HordorKeyboard.Hordor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FD99762325CF244000DB904A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,6 +421,7 @@
 		FD99762625CF244000DB904A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +441,7 @@
 		FD99762725CF244000DB904A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +461,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FD54C6B025CF6EEC00D97E88 /* Build configuration list for PBXNativeTarget "Hordor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD54C6AE25CF6EEC00D97E88 /* Debug */,
+				FD54C6AF25CF6EEC00D97E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FD99760C25CF243F00DB904A /* Build configuration list for PBXProject "HordorKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
